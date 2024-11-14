@@ -31,6 +31,16 @@ class _LoginState extends State<LoginPage> {
       }
       setState(() {});
     });
+    accountController.text = '刘林青';
+    passwdController.text = 'Hbpc@4186';
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    accountController.dispose();
+    passwdController.dispose();
+    captchaController.dispose();
   }
 
   @override
